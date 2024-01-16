@@ -1,14 +1,13 @@
-
 import './App.css';
-import imageCoffee from './assets/img/coffee-mug.png'
+import { NavBar } from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <img src={imageCoffee} className="App-logo" alt="logo" />
-        <h1>An online Coffee store project</h1>
-      </header>
+      <NavBar />
+      <h1>Online Coffee shop</h1>
+      <p>Soon available</p>
+
     </div>
   );
 }
