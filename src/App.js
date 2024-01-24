@@ -1,6 +1,6 @@
 import './App.css';
 import { ItemListContainer } from './components/ItemListContainer';
-// import ItemCount from './components/ItemCounter';
+import {ItemCount} from './components/ItemCount';
 import { NavBar } from './components/NavBar';
 import { Provider } from './context/Provider';
 // import { useState } from 'react';
@@ -13,9 +13,11 @@ function App() {
     <div className="App">
       <NavBar/>
       <ItemListContainer/>
-      <h1>Online Coffee shop</h1>
-      <p>Soon available</p>
-      {/* <ItemCount stock={15} count={count} setCount={setCount}/> */}
+      <div className="border-2 border-teal-800 p-10 align-middle">
+         <h1>Online Coffee shop</h1>
+         <p>Soon available</p>
+      </div>
+      <ItemCount stock={5}/>
     </div>
     </Provider>
   );
