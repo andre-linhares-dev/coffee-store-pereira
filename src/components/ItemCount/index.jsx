@@ -57,16 +57,16 @@ import { useContext, useState } from 'react';
 import { MinusCircleIcon, PlusCircleIcon } from '@heroicons/react/24/solid';
 import AppContext from '../../context/AppContext';
 
-const ItemCount = ({stock}) => {
+const ItemCount = () => {
     // Inicializa o estado da quantidade de itens com 1
     const [quantity, setQuantity] = useState(1);
     const { cartItems, setCartItems } = useContext(AppContext);
 
     // Função para aumentar a quantidade
     const increaseQuantity = () => {
-        if(quantity < stock) {
+  
         setQuantity(quantity + 1);
-    }
+    
     };
 
     // Função para diminuir a quantidade
@@ -90,8 +90,8 @@ const ItemCount = ({stock}) => {
     }
 
     return (
-        <div className="pt-4 text-center pl-20 pr-20">
-            <div className="text-2xl font-semibold mb-4">Item counter:</div>
+        <div className="pt-4 text-center">
+            <div className="text-2xl text-amber-200 text-base font-semibold m-2">Quantity:</div>
             <div className="flex justify-center space-x-6 mb-4">
                 <button
                     onClick={decreaseQuantity}
@@ -100,14 +100,14 @@ const ItemCount = ({stock}) => {
                 >
                     <MinusCircleIcon className="w-6" />
                 </button>
-                <span className="text-xl font-semibold">{quantity}</span>
+                <span className="text-xl text-white font-semibold">{quantity}</span>
                 <button onClick={increaseQuantity} className="text-teal-800">
                     <PlusCircleIcon className="w-6" />
                 </button>
             </div>
             <button
                 onClick={addToCart}
-                className="bg-teal-800 text-white rounded-md p-2 hover:bg-teal-900"
+                className="bg-teal-800 text-amber-200 font-semibold rounded-md p-2 hover:bg-teal-900"
             >
                 Add to cart
             </button>
