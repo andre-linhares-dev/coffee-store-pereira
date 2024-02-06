@@ -46,7 +46,7 @@ const ItemList = () => {
           <ClipLoader color="#0b3935" loading={loading} size={40} />
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-12 pr-14 pl-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-12 pr-14 pl-14" >
           {filteredProducts.map((product) => (
             <Item key={product.id} product={product} />
           ))}
