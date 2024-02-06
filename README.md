@@ -1,3 +1,5 @@
+## ☕ This project is using Fake Coffee API https://fake-coffee-api.vercel.app/ ☕
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
