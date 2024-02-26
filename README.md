@@ -1,4 +1,4 @@
-## ☕ This project is using Fake Coffee API https://fake-coffee-api.vercel.app/ ☕
+## ☕ This project is using Fake Coffee API https://fake-coffee-api.vercel.app/
 
 # Getting Started with Create React App
 

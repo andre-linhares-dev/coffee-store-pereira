@@ -1,8 +1,14 @@
 import { XCircleIcon } from "@heroicons/react/24/solid";
 import { useEffect } from "react";
+import { ItemCountDetails } from "../ItemCountDetails";
+
 
 const ItemDetailContainer = ({ product, onClose }) => {
+
+    
+
     useEffect(() => {
+       
         const handleKeyPress = (event) => {
           if (event.key === 'Escape') {
             onClose();
@@ -17,6 +23,9 @@ const ItemDetailContainer = ({ product, onClose }) => {
           document.removeEventListener('keydown', handleKeyPress);
         };
       }, [onClose]);
+
+   
+
     return (
         <div className="modal fixed w-full h-full top-0 left-0 flex items-center justify-center">
             <div className="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -46,10 +55,11 @@ const ItemDetailContainer = ({ product, onClose }) => {
                     <p className="text-gray-700"><span className="font-black">Roast Level:</span> {product.roast_level}</p>
                     <p className="text-gray-700"><span className="font-black">Price:</span> ${product.price}</p>
                     </div>
+            <ItemCountDetails/>
                 </div>
             </div>
         </div>
     );
 };
 
-export { ItemDetailContainer };
+export {ItemDetailContainer }
