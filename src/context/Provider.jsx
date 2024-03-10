@@ -1,14 +1,19 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import AppContext from "./AppContext"
 import propTypes from 'prop-types'
 
-const Provider = ({children}) => {
+const Provider = ({ children }) => {
 
     const [cartItems, setCartItems] = useState(0);
+    const [shoppingCartItems, setShoppingCartItems] = useState([])
+
+
 
     const value = {
         cartItems,
-        setCartItems
+        setCartItems,
+        shoppingCartItems,
+        setShoppingCartItems,
     };
 
     return (
@@ -19,6 +24,8 @@ const Provider = ({children}) => {
 }
 
 export { Provider }
+
+
 
 Provider.propTypes = {
     children: propTypes.any,

@@ -3,7 +3,7 @@ import { ItemList } from "../ItemList";
 
 const ItemListContainer = () => {
     return (
-        <div className="">
+        <div className="pt-[180px]">
             <Info/>
             <ItemList/>
         </div>

@@ -1,10 +1,26 @@
 .navBar {
+    position: fixed;
     background: #0B3935;
     box-shadow: 0.125rem, .25rem rgba(0, 0, 0, .075);
     display: flex;
-    padding: 10px 40px;
+    padding: 10px 50px;
     justify-content: space-between;
     align-items: center;
-    min-height: 15vh;
+    height: 180px;
+    width: 100%;
+    transition: all 0.4s ease; 
 }
 
+.navBar.scrolled {
+    padding: 5px 40px; /* Ajuste o padding conforme necessário */
+}
+
+.logo {
+    max-width: 12vw; /* Tamanho inicial do logo */
+    transition: max-width 0.3s ease; /* Transição para o tamanho do logo */
+}
+
+.logo.scrolledLogo {
+    max-width: 8vw;
+    margin-top: 50px; /* Tamanho reduzido do logo */
+}

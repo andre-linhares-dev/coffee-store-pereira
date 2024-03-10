@@ -1,7 +1,7 @@
 import './App.css';
 import { Provider } from './context/Provider';
 import { BrowserRouter } from 'react-router-dom';
-import { Router } from './components/Router/routes';
+import { Router } from './Router/routes';
 // import { ItemListContainer } from './components/ItemListContainer';
 // import {ItemCount} from './components/ItemCount';
 // import { NavBar } from './components/NavBar';

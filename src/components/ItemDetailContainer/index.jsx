@@ -1,6 +1,6 @@
 import { XCircleIcon } from "@heroicons/react/24/solid";
 import { useEffect } from "react";
-import { ItemCountDetails } from "../ItemCountDetails";
+
 
 
 const ItemDetailContainer = ({ product, onClose }) => {
@@ -55,7 +55,7 @@ const ItemDetailContainer = ({ product, onClose }) => {
                     <p className="text-gray-700"><span className="font-black">Roast Level:</span> {product.roast_level}</p>
                     <p className="text-gray-700"><span className="font-black">Price:</span> ${product.price}</p>
                     </div>
-            <ItemCountDetails/>
+            {/* <ItemCountDetails/> */}
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
-        <div className="pb-8 pt-6">
-            <h1 className="flex justify-center my-4 font-bold text-4xl text-teal-950 font-display">Contact Information:</h1>
+        <div className="pb-8 pt-[205px]">
+            <h1 className="flex justify-center my-4 font-bold  text-teal-950 text-5xl font-headers">Contact Information:</h1>
             <p className=" w-6/12 mx-auto text-center font-semibold text-teal-950">Website: www.pereiracoffeeshop.com <br />
                 Explore our website to learn more about our menu, special offers, and events.<br /><br />
                 

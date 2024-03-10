@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['Pixelify Sans', 'sans-serif'],
+      headers: ['Zilla Slab']
     },
   },
   plugins: [],
