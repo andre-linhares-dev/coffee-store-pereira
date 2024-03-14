@@ -53,5 +53,5 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 
 **Author:**
 
-André Linhares Pereira
+André Linhares Pereira <br>
 https://github.com/andre-linhares-dev/
