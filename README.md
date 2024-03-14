@@ -54,4 +54,4 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 **Author:**
 
 André Linhares Pereira
-<github.com/andre-linhares-dev>
+https://github.com/andre-linhares-dev/
