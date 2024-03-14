@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { ShoppingCartItem } from "../ShoppingCartItem";
 import AppContext from "../../context/AppContext";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { doc, addDoc, collection  } from "firebase/firestore";
+import db from "../../services/firebase";
 
 
 
@@ -21,11 +23,25 @@ function ShoppingCart() {
     };
 
     const handleCheckout = () => {
+
+        const orderscollection = collection(db, "orders")
+
+        addDoc(orderscollection, {
+            buyer:{
+                name:"André",
+                phone:"99 987654321",
+                email:"blabla@gmail.com"
+            },
+            items:[...shoppingCartItems],
+            //  total:totalPrice.props.value,
+             time:Date.now()
+        })
+        .then( ()=>{
         // Limpar o carrinho e marcar a compra como concluída
         setShoppingCartItems([]);
         setPurchaseCompleted(true);
-    };
-
+    })};
+        
     return (
         <section className="pt-[220px]">
             <h1 className="flex justify-center mb-6 font-bold text-5xl font-headers text-teal-950">Shopping Cart Resume</h1>
