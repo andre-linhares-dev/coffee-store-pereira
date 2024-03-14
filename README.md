@@ -1,72 +1,57 @@
-## ☕ This project is using Fake Coffee API https://fake-coffee-api.vercel.app/
+## ☕️ Online Coffee Shop
 
-# Getting Started with Create React App
+**Description:**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Online Coffee Shop is a web platform developed with React.js, offering coffee enthusiasts a unique online shopping experience. This project was designed to showcase front-end development practices using modern technologies like React, React Router, and context API, providing users with a convenient way to explore and purchase a variety of coffee-related products.
 
-## Available Scripts
+<img src="/src/assets/img/gifcoffeeshoppereira-ezgif.com-crop.gif">
 
-In the project directory, you can run:
+**Key Features:**
 
-### `npm start`
+1. **Product Exploration:** Users can browse through a wide selection of coffee-related products, including beans, accessories, specialty beverages, and more. Each product is accompanied by details such as name, description, price, and image for an informative shopping experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Adding to Cart:** With just one click, users can add their favorite products to the shopping cart, with the option to view a visual indicator to confirm the successful addition of the item.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Product Details:** Users have the ability to view complete details of a specific product, including a detailed description and the option to close the details to return to the previous page.
 
-### `npm test`
+**Firebase Integration:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project utilizes Firebase as the backend platform for data storage and user authentication. Firestore, the NoSQL database offered by Firebase, is used to store information about products and user orders.
 
-### `npm run build`
+**API Used:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application consumes data from the Fake Coffee API, which provides information about coffee-related products. Access the API at: [Fake Coffee API](https://fake-coffee-api.vercel.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Technologies Used:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js:** Used as the primary front-end framework to create reusable and interactive components.
+  
+- **React Router:** Facilitates navigation between different pages and components within the application, offering a smooth and intuitive user experience.
 
-### `npm run eject`
+- **Context API:** Implemented to manage the global state of the application, allowing data sharing between different components without the need for props.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Firebase:** A platform for mobile and web application development offering a variety of services, including real-time data storage, user authentication, and application hosting.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Firestore:** The NoSQL database offered by Firebase, used to store information about products and user orders.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **PropTypes:** Used to define and document the types of properties expected by components, ensuring better maintenance and error prevention.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Installation and Usage Instructions:**
 
-## Learn More
+1. Clone this repository to your local environment.
+2. Run `npm install` to install all necessary dependencies.
+3. Run `npm start` to start the application locally.
+4. Access the application through the web browser using the local address provided by the development server.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Contribution:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! If you wish to improve this project, feel free to send pull requests or open issues to report problems or suggestions.
 
-### Code Splitting
+**License:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-### Analyzing the Bundle Size
+**Author:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+André Linhares Pereira
+github.com/andre-linhares-dev
